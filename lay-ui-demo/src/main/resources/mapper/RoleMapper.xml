@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="foo.hk.cn.layuidemo.mapper.RoleMapper">
+
+    <resultMap id="BaseResultMap" type="foo.hk.cn.layuidemo.entity.Role">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="roleName" column="role_name" jdbcType="VARCHAR"/>
+            <result property="roleCode" column="role_code" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,role_name,role_code
+    </sql>
+</mapper>
